@@ -46,7 +46,7 @@
     div.custom-tooltip:hover span{
         visibility: visible;
     }
-    button {
+    a {
         background-color: #001F4B;
         border: none;
         color: white;
@@ -59,11 +59,11 @@
         cursor: pointer;
         border-radius: 5px;
 }
-button:hover {
+a:hover {
   background-color:  #00D78B; 
   color: white;
 }
-div.custom-tooltip:hover button {
+div.custom-tooltip:hover a {
     transition: background-color 0.4s;
 }
     </style>
@@ -94,7 +94,7 @@ pannellum.viewer('panorama', {
              /*Producto*/       "Mesa Maker PRO",
              /*Tipo de Producto*/ "Mobiliario",
              /*Texto Boton*/      "Conoce Nuestos espacios"],
-             "URL": "https://i.imgur.com/YO7sm02.jpeg",
+             
              
         },
         {
@@ -121,7 +121,7 @@ function createImageTooltip(div, args) {
     <img src="${args[0]}" width="95%"> 
     <h2>${args[2]}</h2>
     <h1>${args[1]}</h1>
-    <button  type="button">${args[3]} </button>
+    <a href="default.asp" target="_blank">${args[3]}</a>
     `;
     div.classList.add('custom-tooltip');
     div.appendChild(span);
@@ -132,4 +132,6 @@ function createImageTooltip(div, args) {
 
 
 </script>
+
+
 
